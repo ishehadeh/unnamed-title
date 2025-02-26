@@ -5,52 +5,50 @@
     <script>
 
     </script>
-
-<audio id="myAudio" src="assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
-</audio>
-
-<audio id="myAudio2" src="assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
-</audio>
-
-<script>
-
-    var myAudio = document.getElementById("myAudio");
-    var isPlaying = false;
-
-    function togglePlay() {
-    isPlaying ? myAudio.pause() : myAudio.play();
-    };
-
-    myAudio.onplaying = function() {
-    isPlaying = true;
-    };
-    myAudio.onpause = function() {
-    isPlaying = false;
-    };
-
-
-
-    var myAudio2 = document.getElementById("myAudio2");
-    var isPlaying = false;
-
-    function togglePlay2() {
-    isPlaying ? myAudio2.pause() : myAudio2.play();
-    };
-
-    myAudio2.onplaying = function() {
-    isPlaying = true;
-    };
-    myAudio2.onpause = function() {
-    isPlaying = false;
-    };
-
-</script>
 </head>
 
 
 
 <body>
-
+    <audio id="myAudio" src="assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
+    </audio>
+    
+    <audio id="myAudio2" src="assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
+    </audio>
+    
+    <script>
+    
+        var myAudio = document.getElementById("myAudio");
+        var isPlaying = false;
+    
+        function togglePlay() {
+        isPlaying ? myAudio.pause() : myAudio.play();
+        };
+    
+        myAudio.onplaying = function() {
+        isPlaying = true;
+        };
+        myAudio.onpause = function() {
+        isPlaying = false;
+        };
+    
+    
+    
+        var myAudio2 = document.getElementById("myAudio2");
+        var isPlaying = false;
+    
+        function togglePlay2() {
+        isPlaying ? myAudio2.pause() : myAudio2.play();
+        };
+    
+        myAudio2.onplaying = function() {
+        isPlaying = true;
+        };
+        myAudio2.onpause = function() {
+        isPlaying = false;
+        };
+    
+    </script>
 </body>
 
 </html>
