@@ -7,6 +7,13 @@
             Scoundrel
         </h1>
     </center>
+
+    <audio id="myAudio" src="assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
+    </audio>
+    
+    <audio id="myAudio2" src="assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
+    </audio>
+
     <script>
         class Monster {
             constructor(value) {
@@ -48,20 +55,8 @@
 
             }
         }
-    </script>
-</head>
 
 
-
-<body>
-    <audio id="myAudio" src="assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
-    </audio>
-    
-    <audio id="myAudio2" src="assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
-    </audio>
-    
-    <script>
-    
         var myAudio = document.getElementById("myAudio");
         var isPlaying = false;
     
@@ -91,6 +86,15 @@
         myAudio2.onpause = function() {
         isPlaying = false;
         };
+
+    </script>
+</head>
+
+
+
+<body>
+
+    <script>
 
         <center>
             <button onClick="togglePlay()">Weezer</button>
