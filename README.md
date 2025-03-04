@@ -1,1 +1,1 @@
-Dungeong Crawl Rogue like based on the card game Scoundrel 
+Dungeon Crawl Rogue like based on the card game Scoundrel 
