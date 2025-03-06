@@ -2,14 +2,6 @@
 
 <head>
     <title>Scoundrel</title>
-    <center>
-        <h1>
-            Scoundrel
-        </h1>
-        <p>
-            A dungeon crawl Rogue like created by Zach Bage and Kurt Bieg
-        </p>
-    </center>
 
     <audio id="myAudio" src="assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
     </audio>
@@ -103,15 +95,15 @@
     </script>
 
     <style>
-        .align-contents {
+        .center-vertical {
             display: flex;
+            align-items: center;
             flex-flow: row wrap;
         }
-        .align-contents.center-vertical {
+        .center-horizontal {
+            display: flex;
             align-items: center;
-        }
-        .align-contents.center-horizontal {
-            justify-content: center;
+            flex-flow: column wrap;
         }
     </style>
 </head>
@@ -119,9 +111,21 @@
 
 
 <body>
-    <div class="align-contents center-horizontal">
-        <button onClick="togglePlay()">Weezer</button>
-        <button onClick="togglePlay2()">St Pepsi</button>  
+    <div>
+        <div class="center-horizontal">
+            <h1>
+                Scoundrel
+            </h1>
+            <div>
+                <p>
+                    A dungeon crawl Rogue like created by Zach Bage and Kurt Bieg
+                </p>
+            </div>
+        </div>
+        <div class="center-horizontal">
+            <button onClick="togglePlay()">Weezer</button>
+            <button onClick="togglePlay2()">St Pepsi</button>  
+        </div>
     </div>
 </body>
 
