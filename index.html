@@ -9,8 +9,62 @@
     <audio id="myAudio2" src="assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
     </audio>
 
+    <template id="template-sc-deck">
+        <style>
+            :host {
+                --card-w: 6rem;
+                --card-h: 8rem;
+            }
+            .deck {
+                max-width: var(--card-w);
+                min-width: var(--card-w);
+                max-height: var(--card-h);
+                min-height: var(--card-h);
 
-    <script src="js/deck.js"></script>
+                background-color: color-mix(in srgb, var(--bg) 50%, var(--fg) 50%);
+                border: 2px solid var(--fg);
+                box-shadow: 4px 4px 2px 2px var(--fg);
+                text-align: center;
+            }
+
+            h2 {
+                color: var(--bg);
+            }
+
+            .card {
+                border: 1px solid black;
+                max-width: var(--card-w);
+                min-width: var(--card-w);
+                max-height: var(--card-h);
+                min-height: var(--card-h);
+            }
+
+            .card-list {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 24pt;
+                justify-items: center;
+            }
+        </style>
+        <div class="card-list">
+            <div class="deck">
+                <h2>Deck</h2>
+                <button>Draw</button>
+            </div>
+
+            <div class="card">
+            </div>
+
+            <div class="card">
+            </div>
+
+            <div class="card">
+            </div>
+        </div>
+    </template>
+
+    <script  src="./js/deck.js"></script>
+    <script src="./js/DeckComponent.js"></script>
     <script>
         var myAudio = document.getElementById("myAudio");
         var isPlaying = false;
@@ -149,6 +203,8 @@
         </div>
         <hr>
     </div>
+
+    <sc-deck></sc-deck>
 </body>
 
 </html>
