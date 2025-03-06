@@ -101,20 +101,28 @@
         };
 
     </script>
+
+    <style>
+        .align-contents {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .align-contents.center-vertical {
+            align-items: center;
+        }
+        .align-contents.center-horizontal {
+            justify-content: center;
+        }
+    </style>
 </head>
 
 
 
 <body>
-
-    <script>
-
-        <center>
-            <button onClick="togglePlay()">Weezer</button>
-            <button onClick="togglePlay2()">St Pepsi</button>  
-        </center>
-    
-    </script>
+    <div class="align-contents center-horizontal">
+        <button onClick="togglePlay()">Weezer</button>
+        <button onClick="togglePlay2()">St Pepsi</button>  
+    </div>
 </body>
 
 </html>
