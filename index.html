@@ -105,6 +105,21 @@
             align-items: center;
             flex-flow: column wrap;
         }
+        .card {
+            border: 1px solid black;
+            max-width: 300px;
+            min-width: 300px;
+            max-height: 400px;
+            min-height: 400px;
+            padding: 0px 15px;
+        }
+
+        .card > div.header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -126,6 +141,15 @@
             <button onClick="togglePlay()">Weezer</button>
             <button onClick="togglePlay2()">St Pepsi</button>  
         </div>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <h2>Weapon</h2>
+
+            <h3>15</h3>
+        </div>
+        <hr>
     </div>
 </body>
 
