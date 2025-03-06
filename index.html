@@ -54,8 +54,18 @@
                 }
             }
 
-            draw() {
+            shuffle() {
+                // shuffle the deck by sorting by Math.random()
+                const shuffled = this.#cards
+                                    .map(value => ({ value, sort: Math.random() }))
+                                    .sort((a, b) => a.sort - b.sort)
+                                    .map(({ value }) => value)
+                this.#cards = shuffled;
+            }
 
+            /** @return {HealthPotion | Weapon | Monster} */
+            draw() {
+                return this.#cards.pop();
             }
         }
 
