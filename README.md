@@ -8,6 +8,11 @@
 5. [Demo Videos](#demo)
 
 ## Team Information <a name="members"></a>
+Joeseph Daly
+
+Ian Shehadeh
+
+Aaron McClellan
 
 ## Game Information <a name="info"></a>
 Dungeon Crawl Rogue like based on the card game Scoundrel
