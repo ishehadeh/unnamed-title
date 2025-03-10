@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/index.css"/> <!-- This allows the use of CSS -->
+        <title>Scoundrel title page</title>
+
+        <audio id="myAudio" src="../assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto">
+        </audio>
+        
+        <audio id="myAudio2" src="../assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto">
+        </audio>
+
+
+        <script src="../js/deck.js"></script>
+        <script>
+            var myAudio = document.getElementById("myAudio");
+            var isPlaying = false;
+        
+            function togglePlay() {
+                isPlaying ? myAudio.pause() : myAudio.play();
+            };
+        
+            myAudio.onplaying = function() {
+                isPlaying = true;
+            };
+            myAudio.onpause = function() {
+                isPlaying = false;
+            };
+        
+            var myAudio2 = document.getElementById("myAudio2");
+            var isPlaying = false;
+        
+            function togglePlay2() {
+                isPlaying ? myAudio2.pause() : myAudio2.play();
+            };
+        
+            myAudio2.onplaying = function() {
+                isPlaying = true;
+            };
+            myAudio2.onpause = function() {
+                isPlaying = false;
+            };
+
+        </script>
+    </head>
+
+
+
+    <body>
+        <div>
+            <div class="center-horizontal">
+                <h1>Scoundrel</h1>
+                <div>
+                    <p>A dungeon crawl Rogue like created by Zach Bage and Kurt Bieg</p>
+                </div>
+            </div>
+            <div class="center-horizontal">
+                <a href="http://stfj.net/art/2011/Scoundrel.pdf" class = "button">Rules</a>
+            <br/>
+                <a href="game.html" class = "button">The game</a>
+            <br/> 
+                <button onClick="togglePlay()">Weezer</button>
+            <br/>
+                <button onClick="togglePlay2()">St Pepsi</button>  
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="header">
+                <h2>Weapon</h2>
+                <h3>15</h3>
+            </div>
+            <hr>
+        </div>
+    </body>
+
+</html>

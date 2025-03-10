@@ -1,0 +1,63 @@
+:root {
+    --fg: #0f0f0f;
+    --bg: #fefefe;
+}
+
+body {
+    background: var(--bg);
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.center-horizontal {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.card {
+    border: 1px solid black;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    padding: 0px 15px;
+}
+
+.card > div.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--fg);
+    padding: 4px 12px;
+    transition-duration: 500ms;
+    background-color: var(--bg);
+}
+
+button:hover {
+    background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
+}
+
+a.button {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--fg);
+    padding: 4px 12px;
+    transition-duration: 500ms;
+}
+
+a.button:hover {
+    background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
+}
