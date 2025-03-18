@@ -8,6 +8,11 @@
 5. [Demo Videos](#demo)
 
 ## Team Information <a name="members"></a>
+Joe Daly: A math major from St Mary's college of maryland with minimal coding experience
+
+Ian Shehedeh:
+
+Aaron McClellan: 
 
 ## Game Information <a name="info"></a>
 Dungeon Crawl Rogue like based on the card game Scoundrel
