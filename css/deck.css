@@ -1,0 +1,34 @@
+:host {
+    --card-w: 6rem;
+    --card-h: 8rem;
+}
+.deck {
+    max-width: var(--card-w);
+    min-width: var(--card-w);
+    max-height: var(--card-h);
+    min-height: var(--card-h);
+
+    background-color: color-mix(in srgb, var(--bg) 50%, var(--fg) 50%);
+    border: 2px solid var(--fg);
+    box-shadow: 4px 4px 2px 2px var(--fg);
+    text-align: center;
+}
+
+h2 {
+    color: var(--bg);
+}
+
+.card {
+    border: 1px solid black;
+    max-width: var(--card-w);
+    min-width: var(--card-w);
+    max-height: var(--card-h);
+    min-height: var(--card-h);
+}
+
+.card-list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24pt;
+    justify-items: center;
+}
