@@ -5,27 +5,9 @@
         <audio id="myAudio" src="Assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto"></audio>
         <audio id="myAudio2" src="Assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto"></audio>
 
-        <template id="template-sc-deck">
-            <link rel="stylesheet" type="text/css" href="../css/deck.css" />
-            <div class="card-list">
-                <div class="deck">
-                    <h2>Deck</h2>
-                    <button>Draw</button>
-                </div>
-
-                <div class="card">
-                </div>
-
-                <div class="card">
-                </div>
-
-                <div class="card">
-                </div>
-            </div>
-        </template>
+        <link rel="stylesheet" type="text/css" href="../css/deck.css" />
 
         <script  src="../js/deck.js"></script>
-        <script src="../js/DeckComponent.js"></script>
         <script>
             var myAudio = document.getElementById("myAudio");
             var isPlaying = false;
@@ -83,6 +65,21 @@
             </div>
             <hr>
         </div>
-        <sc-deck></sc-deck>
+
+        <div class="card-list">
+            <div class="deck">
+                <h2>Deck</h2>
+                <button>Draw</button>
+            </div>
+
+            <div class="card">
+            </div>
+
+            <div class="card">
+            </div>
+
+            <div class="card">
+            </div>
+        </div>
     </body>
 </html>
