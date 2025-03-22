@@ -1,3 +1,4 @@
+// @ts-check
 
 /**
  * @typedef {'club' | 'spade'} MonsterType

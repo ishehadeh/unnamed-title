@@ -1,3 +1,5 @@
+// @ts-check
+
 class SCDeck extends HTMLElement {
     /** @type {Deck} */
     #deck;
