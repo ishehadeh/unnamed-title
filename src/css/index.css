@@ -1,63 +1,124 @@
-:root {
-    --fg: #0f0f0f;
-    --bg: #fefefe;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background: var(--bg);
+    background-color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans";
+    margin: 0;
 }
 
-.center-vertical {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-}
-.center-horizontal {
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-}
-.card {
-    border: 1px solid black;
-    max-width: 300px;
-    min-width: 300px;
-    max-height: 400px;
-    min-height: 400px;
-    padding: 0px 15px;
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
 }
 
-.card > div.header {
+header {
+    background-image: url("../../Assets/images/Scoundrel.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 100px);
+}
+
+.content {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: gray;
+    display: flex;
     justify-content: space-between;
+    padding-right: 10px;
+    max-width: 100%;
+    width: 2000px;
+}
+
+nav .logo {
+    font-size: 3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: red;
+    color:#fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: gray;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
 }
 
-button {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 6px;
+footer button {
+    background-color: red;
+    color:#fff;
+    padding: 1rem;
     text-decoration: none;
-    color: var(--fg);
-    padding: 4px 12px;
-    transition-duration: 500ms;
-    background-color: var(--bg);
 }
 
-button:hover {
-    background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
-}
+@media screen and (max-width: 700px) {
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto 0;
+    }
 
-a.button {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 6px;
-    text-decoration: none;
-    color: var(--fg);
-    padding: 4px 12px;
-    transition-duration: 500ms;
-}
+    nav ul {
+        flex-direction: column;
+    }
 
-a.button:hover {
-    background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
+    nav li:not(:last-child) {
+        margin: 1rem;
+    }
+
+    nav .highlight {
+        display: none;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 1rem;
+        text-align: center;
+    }
 }

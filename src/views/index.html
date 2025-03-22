@@ -1,6 +1,8 @@
 <html>
     <head>
-        <title>Scoundrel title page</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
 
         <audio id="myAudio" src="Assets/Weezer (Red Album) - Pork and Beans.mp3" type="Audio/mp3" preload="auto"></audio>
         <audio id="myAudio2" src="Assets/Saint Pepsi - Enjoy yourself.mp3" type="Audio/mp3" preload="auto"></audio>
@@ -41,45 +43,30 @@
     </head>
 
     <body>
-        <div>
-            <div class="center-horizontal">
-                <h1>Scoundrel</h1>
-                <div>
-                    <p>A dungeon crawl Rogue like created by Zach Bage and Kurt Bieg</p>
+        <header>
+            <nav>
+                <div class="logo">
+                    Scoundrel
                 </div>
-            </div>
-            <div class="center-horizontal">
-                <a href="http://stfj.net/art/2011/Scoundrel.pdf" class = "button">Rules</a>
-            <br/>
-                <a href="Game.html" class = "button">The game</a>
-            <br/> 
-                <button onClick="togglePlay()">Weezer</button>
-            <br/>
-                <button onClick="togglePlay2()">St Pepsi</button>  
-            </div>
-        </div>
-        <div class="card">
-            <div class="header">
-                <h2>Weapon</h2>
-                <h3>15</h3>
-            </div>
-            <hr>
-        </div>
+                <ul>
+                 <li><a href="#" class="selected"></a>Home</li>
+                 <li><a href="#"></a>Tutorial</li>
+                 <li><a href="#"></a>Game</li>
+                 <li><a href="#"></a>Development</li>
+                </ul> 
+             </nav>
+             <div class="content">
+                <h1>Scoundrel</h1>
+                <p>A dungeon crawl Rogue like created by Zach Bage and Kurt Bieg</p>
+                <a href="#" class="highlight">Start</a>
+             </div>
+        </header>
 
-        <div class="card-list">
-            <div class="deck">
-                <h2>Deck</h2>
-                <button>Draw</button>
-            </div>
-
-            <div class="card">
-            </div>
-
-            <div class="card">
-            </div>
-
-            <div class="card">
-            </div>
-        </div>
+        <footer>
+            <ul>
+                <li><button onClick="togglePlay()">Weezer</button></li>
+                <li><button onClick="togglePlay2()">St Pepsi</button></li>
+            </ul>
+        </footer>
     </body>
 </html>
