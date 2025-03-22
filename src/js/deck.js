@@ -61,3 +61,20 @@ class Deck {
         return this.#cards.pop() ?? null;
     }
 }
+
+try {
+    if (process?.versions?.node !== undefined) {
+        module.exports = {
+            Deck,
+            Monster,
+            Weapon,
+            HealthPotion
+        }
+    }
+} catch (e) {
+    if (e instanceof ReferenceError) {
+        // nothing to do, this isn't node
+    } else {
+        throw e;
+    }
+}
