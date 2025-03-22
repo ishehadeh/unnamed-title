@@ -56,8 +56,8 @@ class Deck {
         this.#cards = shuffled;
     }
 
-    /** @return {HealthPotion | Weapon | Monster} */
+    /** @return {HealthPotion | Weapon | Monster | null} */
     draw() {
-        return this.#cards.pop();
+        return this.#cards.pop() ?? null;
     }
 }
