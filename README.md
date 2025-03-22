@@ -12,7 +12,7 @@ Joe Daly: A math major from St Mary's college of maryland with minimal coding ex
 
 Ian Shehedeh:
 
-Aaron McClellan: 
+Aaron McClellan: Software Development Contractor, Graduate from the University of Dayton with a Major in Computer Information Systems
 
 ## Game Information <a name="info"></a>
 Dungeon Crawl Rogue like based on the card game Scoundrel
