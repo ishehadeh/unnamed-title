@@ -15,7 +15,9 @@ Ian Shehedeh:
 Aaron McClellan: Software Development Contractor, Graduate from the University of Dayton with a Major in Computer Information Systems
 
 ## Game Information <a name="info"></a>
-Dungeon Crawl Rogue like based on the card game Scoundrel
+Scoundel is "A Single Player Rogue-like Card Game by Zach Gage and Kurt Bieg"
+
+I(Joe) first saw the rules for Scoundrel in a youtube video a while back and thought it seemed like a really cool game, I played a couple rounds and figured this would be a pretty awesome video game and reached out to my comp sci buddies and asked if they wanted to work on it with me, 
 
 ## Rules <a name="rules"></a>
 
