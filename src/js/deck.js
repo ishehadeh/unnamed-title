@@ -1,6 +1,18 @@
+
+/**
+ * @typedef {'club' | 'spade'} MonsterType
+ */
+
 class Monster {
-    constructor(value) {
+    /** @type {MonsterType} */
+    type;
+
+    /** @type {number} */
+    value;
+
+    constructor(value, type) {
         this.value = value;
+        this.type = type;
     }
 }
 
@@ -22,15 +34,15 @@ class Deck {
 
     constructor() {
         for (let i = 2; i <= 10; ++i) {
-            this.#cards.push(new Monster(i));
-            this.#cards.push(new Monster(i));
+            this.#cards.push(new Monster(i, 'club'));
+            this.#cards.push(new Monster(i, 'spade'));
             this.#cards.push(new HealthPotion(i));
             this.#cards.push(new Weapon(i));
         }
 
         for (let i = 11; i <= 14; ++i) {
-            this.#cards.push(new Monster(i));
-            this.#cards.push(new Monster(i));
+            this.#cards.push(new Monster(i, 'club'));
+            this.#cards.push(new Monster(i, 'spade'));
         }
     }
 
