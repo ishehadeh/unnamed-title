@@ -1,26 +1,3 @@
-# Scoundrel
-
-## Table of Contents
-1. [Team Information](#members)
-2. [Game Information](#info)
-3. [Rules](#rules)
-4. [Development Process](#devpro)
-5. [Demo Videos](#demo)
-
-## Team Information <a name="members"></a>
-Joe Daly: A math major from St Mary's college of maryland with minimal coding experience
-
-Ian Shehedeh:
-
-Aaron McClellan: Software Development Contractor, Graduate from the University of Dayton with a Major in Computer Information Systems
-
-## Game Information <a name="info"></a>
-Scoundel is "A Single Player Rogue-like Card Game by Zach Gage and Kurt Bieg" back in 2011
-
-I(Joe) first found this game on youtube and thought it would be really fun to make a video game out of and reached out to my friends who had coding experience in hopes of making it happen. I first was hoping to make a full game of our own inspired by the game but figured it would be best to start small and get a better feel for coding first by making this. 
-
-## Rules <a name="rules"></a>
-
 ### Rules:
 The 26 **Clubs** and **Spades** in the deck are known as **Monsters**. Their damage is represented by the cards ordered value. (e.g. 10 = 10, Jack = 11, Queen = 12, King = 13 and Ace = 14)
 
@@ -62,9 +39,3 @@ It is important to note that although you retain your weapons until they are rep
 
 Once you have chosen 3 cards (such that only one remains), your turn is complete. Leave the fourth card
 face up in front of you as part of the next Room.
-
-## Development Process <a name="devpro"></a>
-
-## Demo Videos <a name="demo"></a>
-
- 
