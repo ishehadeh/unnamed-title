@@ -52,10 +52,13 @@ You may either fight it barehanded or with an equipped Weapon
 #### Combat
 If you chose to fight a monster bearhanded, you will take the full brunt of it's value in health and then it will be discarded, if this value will put your life total at or below zero you will lose the run
 
-If you choose to fight the monster with a weapon, you will take damage equal to the monsters value - weapon value, or weapon value - monsters health, whichever is higher, i.e if you have a 5 of diamonds and are facing a 6 clubs you would do Monster value (6) - Weapon value (5) and take 1 damage or if you have a 7 of diamonds and face a 3 of spades you would do weapon value (7) - Monster value (3) and take 0 damage 
+If you choose to fight the monster with a weapon, you will take damage equal to the monsters value - weapon value, or weapon value - monsters health, whichever is higher. 
+
+    i.e if you have a 5 of diamonds and are facing a 6 clubs you would do Monster value (6) - Weapon value (5) and take 1 damage or if you have a 7 of diamonds and face a 3 of spades you would do weapon value (7) - Monster value (3) and take 0 damage 
 
 It is important to note that although you retain your weapons until they are replaced, once a Weapon is used on a monster, the Weapon can then only be used to slay Monsters of a lower value (less than equal) than the previous Monster it had slain 
-i.e Let's say you used a 5 of diamonds to fight a 9 of clubs, you would take 4 damage, then the monster is placed on your weapon. You can now only use this weapon to fight monsters of less value than 9. So if you then have to face let's say a queen of spades, 9 < 12 so you must fight the queen of spades bearhanded
+
+    i.e Let's say you used a 5 of diamonds to fight a 9 of clubs, you would take 4 damage, then the monster is placed on your weapon. You can now only use this weapon to fight monsters of less value than 9. So if you then have to face let's say a queen of spades, 9 < 12 so you must fight the queen of spades bearhanded
 
 Once you have chosen 3 cards (such that only one remains), your turn is complete. Leave the fourth card
 face up in front of you as part of the next Room.
